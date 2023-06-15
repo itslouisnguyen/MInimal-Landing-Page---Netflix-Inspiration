@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
 }
@@ -29,7 +29,7 @@ body{
 .topbar__logo{
     position: relative;
     width: 15rem;
-    height: 2.5rem;
+    height: auto;
     filter: invert();
 
 }
@@ -40,6 +40,7 @@ body{
     align-items: center;
 }
 .languagebtn{
+    color: rgb(0, 0, 0);
     position: relative;
     display: flex;
     align-items: center;
@@ -76,19 +77,28 @@ body{
     transition: 0.5s;
 }
 .sign:hover{
-    background-color: rgba(23, 23, 23, 0.572) ;
+    background-color: rgba(0, 0, 0, 0.694) ;
     cursor: pointer;
 }
 /*                                                          opening title                                                */
 .openingtitle{
-    color: rgb(32, 32, 32);
+    color: rgb(0, 0, 0);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 12rem;
-    text-shadow: 1px 1px 90px rgb(255, 255, 255);
+    margin-top: 11.5rem;
+    text-shadow: 1px 1px 90px rgba(255, 255, 255, 0.764);
+}
+.openingtitle2{
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
 }
 .openingtitle__heading{
     font-size: 3.5rem;
@@ -124,6 +134,12 @@ body{
     color: rgb(0, 0, 0);
     margin-right: 1rem;
     font-size: 1rem;
+    transition: padding 1s;
+}
+input:focus#emailbox__btn::placeholder{
+    transition: all 0.5s;
+    transform: scale(0.7) translateX(-27%) translateY(-145%);
+    color: rgba(0, 0, 0, 0.631);
 }
 .emailbox__getstarted{
     position: relative;
@@ -137,6 +153,11 @@ body{
     background-color: rgb(35, 35, 35) ;
     color: rgb(255, 255, 255);
     font-weight: 700;
+    transition: all 0.5s;
+}
+.emailbox__getstarted:hover{
+    background-color: rgb(46, 46, 46) ;
+    cursor: pointer;
 }
 .emailbox__senticon{
     position: relative;
@@ -170,14 +191,14 @@ body{
     border-image: linear-gradient(rgb(252, 252, 252), rgba(0, 0, 0, 0.323)) ;
     margin-top: 1rem;
     width: 70%;
-    height: 8rem;
+    height: 8.5rem;
 }
 .bottomfuntion__informationbox.popcornicon{
     margin: 0px;
     margin-bottom: 1rem;
     position: relative;
     width: 9.5rem;
-    height: 10rem;
+    height: auto;
     background: none;
 }
 .bottomfuntion__informationbox.content{
@@ -248,7 +269,6 @@ body{
     flex-direction: column;
     border-bottom: unset;
     width: fit-content;
-    /* margin-right: 10rem; */
 }
 .bottomfeature__box.heading{
     font-size: 3rem;
@@ -262,4 +282,135 @@ body{
     border-bottom: unset;
     margin-top: 0.7rem;
     justify-content: left;
+}
+.bottomfuntion__faq{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 77%;
+    color: rgb(255, 255, 255);
+}
+.bottomfuntion__faq h1{
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+.bottomfuntion__faq.btn{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.65rem;
+    font-weight: 400;
+    background-color: rgba(65, 65, 65, 0.428);
+    padding: 0 1.5rem;
+    width: 100%;
+}
+.bottomfuntion__faq.btn:hover{
+    cursor: pointer;
+    background-color: rgba(91, 91, 91, 0.428);
+}
+.bottomfuntion__faq.answer.show{
+    color: rgba(255, 148, 225, 0.621);
+    margin-top: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 100;
+    background-color: rgba(52, 52, 52, 0.428);
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    transition: all 0.2s;
+    max-height: 5rem;
+}
+.bottomfuntion__faq.answer.show:hover{
+    cursor: pointer;
+    background-color: rgba(42, 42, 42, 0.397);
+    color: rgba(251, 169, 228, 0.876);
+    text-decoration: none;
+}
+.bottomfuntion__faq.answer{
+    color: rgba(255, 148, 225, 0.621);  
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 100;
+    padding: 0rem 1.5rem;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.bottomfuntion__faq.cross{
+    font-size: 4.2rem;
+    font-weight: 230;
+    width: fit-content;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+}
+.bottomfuntion__bottommailbox{
+    padding-bottom: 4rem;
+    width: 100%;
+    border-bottom: 7px solid rgba(255, 255, 255, 0.234);
+}
+.bottomfuntion__bottomurl{
+    color: rgb(174, 174, 174);
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: underline;
+    position: relative;
+    width: 78%;
+    transition: all 1s;
+}
+.bottomfuntion__bottomurl.toppara{
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.bottomfuntion__bottomurlcontent{
+    width: 22rem;
+    min-width: 25%;
+    font-size: 1rem;
+    font-weight: 300;  
+    margin-bottom: 1rem;  
+}
+.bottomfuntion__bottomurl.para{
+    width: fit-content;
+}
+.bottomfuntion__bottomurl.para:hover{
+    cursor: pointer;
+    color: rgb(201, 201, 201);
+}
+.bottomfuntiom__bottomlanguagebtn{
+    width: 78%;
+    margin: 3rem 0;
+
+}
+.languagebtn2{
+    width: fit-content;
+    filter: invert();
+    color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0.4rem 0.7rem;
+    transition: 0.5s;
+}
+.languagebtn2:hover{
+    background-color: rgb(208, 208, 208);
+    cursor: pointer;
 }

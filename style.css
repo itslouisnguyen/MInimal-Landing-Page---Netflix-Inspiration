@@ -3,6 +3,7 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 body{
     color: rgb(255, 255, 255);

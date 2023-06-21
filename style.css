@@ -37,6 +37,16 @@ body{
         align-items: center;
     }
 }
+@media screen and (max-width:1280px){
+    .topbar{
+        height: 90px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding: 1.4rem 1rem;
+        align-items: center;
+    }
+}
 .topbar__logo{
     position: relative;
     width: 15rem;

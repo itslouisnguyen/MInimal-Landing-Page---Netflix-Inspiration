@@ -12,3 +12,14 @@ for (let i = 0; i < button.length; i++) {
     })
     
 }
+
+var english = document.querySelectorALL('english');
+var vietnamese = document.getElementsByName('vietnamese');
+var earth = document.getElementsByClassName('earth');
+language[0].addEventListener('input', function(){
+    earth[0].style.opacity = '0';
+})
+
+
+
+console.log(english[0], vietnamese[0], earth[0])

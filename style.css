@@ -15,7 +15,7 @@ body{
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    width: 100%%;
+    width: 100%;
     height: 60rem;
 }
 /*                                              top bar                                                  */
@@ -62,13 +62,34 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: transparent;
     border: 1px solid black;
     border-radius: 4px;
     padding: 0.4rem 0.7rem;
     margin-right: 1rem;
     transition: 0.5s;
+}
+.languagebtn select{
+    -webkit-appearance: none;
+    position: absolute;
+    font-size: 1rem;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 2.2rem;    
+}
+@media screen and (max-width:600px){
+    .languagebtn select{
+        -webkit-appearance: none;
+        opacity: 0;
+        position: absolute;
+        font-size: 1rem;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        padding: 0 0 0 2.2rem;    
+    }
 }
 @media screen and (max-width:600px){
     .languagebtn{
@@ -93,7 +114,7 @@ body{
 }
 .earth{
     width: 1rem;
-    margin-right: 0.5rem;
+    margin-right: 3.8rem;
 }
 @media screen and (max-width:600px){
     .earth{
@@ -158,15 +179,14 @@ body{
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 2rem 1.5rem;
         align-items: baseline;
         justify-content: center;
-        margin-top: 7rem;
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
-        border-radius: 15px;
+        margin-top: 4.2rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        border-radius: 4px;
         text-shadow: 1px 1px 90px rgba(0, 0, 0, 0.764);
-        background: radial-gradient(circle at left, rgb(255, 255, 255), rgba(0, 0, 0, 0.53));
+        /* background: radial-gradient(circle at left, rgb(188, 188, 188), rgba(169, 168, 166, 0.18) ); */
     }
 }
 .openingtitle2{
@@ -195,7 +215,7 @@ body{
 }
 @media screen and (max-width:600px){
     .openingtitle__sheading{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: 500;
         margin-bottom: 1.5rem;
     }
@@ -206,8 +226,9 @@ body{
     text-shadow: 1px 0px 30px rgb(0, 0, 0);
 }
 @media screen and (max-width:600px){
-    .opening__para{
-        font-size: 0.9rem;
+    .opening__para2{
+        font-size: 1.2rem;
+        padding: 0 3.5rem;
         font-weight: 500;
         text-shadow: none;
         /* text-shadow: 1px 0px 30px rgb(0, 0, 0); */
@@ -225,12 +246,12 @@ body{
 @media screen and (max-width:600px){
     .emailbox{
         position: relative;
-        margin-top: 6rem;
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 1.5rem;
+        margin: 0 3rem;
     }
 }
 #emailbox__btn{
@@ -248,15 +269,38 @@ body{
 @media screen and (max-width:600px){
     #emailbox__btn{
         position: relative;
-        padding: 1.26rem ;
+        padding: 1.5rem;
         font-size: 1rem;
         width: 100%;
         border: 1px solid black;
         border-radius: 4px;
         background-color: white;
         color: rgb(0, 0, 0);
-        margin-right: 1rem;
         font-size: 1rem;
+        margin: 1rem 0;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width:600px){
+    #emailbox__btn:focus{
+        margin-top: 2rem ;
+        margin: 2rem 0 1rem 0 !important;
+        position: relative;
+        padding: 1.5rem !important;
+        font-size: 1rem;
+        width: 100% !important;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        padding-top: 2rem !important;
+        padding-bottom: 1rem !important;
+    }
+    input:focus#emailbox__btn::placeholder{
+        transition: all 0.5s;
+        transform: scale(0.9) translateX(-6%) translateY(-145%);
+        color: rgba(0, 0, 0, 0.631);
     }
 }
 #emailbox__btn:focus{
@@ -272,9 +316,11 @@ body{
     font-size: 1rem;
     padding-top: 1.8rem;
     padding-bottom: 0.72rem;
+    outline: none;
 }
 #emailbox__btn::placeholder{
     transition: all 0.5s;
+    font-size: 1rem;
 }
 input:focus#emailbox__btn::placeholder{
     transition: all 0.5s;
@@ -301,16 +347,15 @@ input:focus#emailbox__btn::placeholder{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-        font-size: 1rem;
+        padding: 1.3rem 0.2rem;
+        font-size: 1.5rem;
         border-radius: 4px;
         width: 12.5rem;
         background-color: rgb(35, 35, 35) ;
         color: rgb(255, 255, 255);
-        font-weight: 700;
+        font-weight: 800;
         transition: all 0.5s;
         white-space: nowrap;
-        padding: 1.36rem;
     }
 }
 .emailbox__getstarted:hover{
@@ -326,7 +371,7 @@ input:focus#emailbox__btn::placeholder{
 @media screen and (max-width:600px){
     .emailbox__senticon{
         position: relative;
-        width: 1rem;
+        width: 1.5rem;
         margin-left: 0.5rem;
         filter: invert(1);
     }
@@ -351,7 +396,7 @@ input:focus#emailbox__btn::placeholder{
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-top: 1rem;
+        margin-top: 7rem;
     }
 }
 .bottomfuntion__informationbox{
@@ -371,6 +416,25 @@ input:focus#emailbox__btn::placeholder{
     width: 70%;
     height: 8.5rem;
 }
+@media screen and (max-width:600px){
+    .bottomfuntion__informationbox{
+        /* padding: 10px 0; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: radial-gradient(circle at center, rgba(252, 252, 252, 0.184), rgba(0, 0, 0, 0.034));
+        border-top-right-radius: 70rem;
+        border-top-left-radius: 70rem;
+        border-bottom-left-radius: 50rem;
+        border-bottom-right-radius: 50rem;
+        border-image: linear-gradient(rgb(252, 252, 252), rgba(0, 0, 0, 0.323)) ;
+        width: 100%;
+        height: 8.5rem;
+    }
+}
 .bottomfuntion__informationbox.popcornicon{
     margin: 0px;
     margin-bottom: 1rem;
@@ -378,6 +442,18 @@ input:focus#emailbox__btn::placeholder{
     width: 9.5rem;
     height: auto;
     background: none;
+}
+@media screen and (max-width:600px){
+    .bottomfuntion__informationbox.popcornicon{
+        margin: 0px;
+        position: relative;
+        width: 9.5rem;
+        height: auto;
+        background: none;
+        margin-right: 17rem;
+        margin-top: -10.5rem;
+        margin-bottom: 0.6rem;
+    }
 }
 .bottomfuntion__informationbox.content{
     width: 50%;
@@ -390,7 +466,19 @@ input:focus#emailbox__btn::placeholder{
     justify-content: center;
     align-items: unset;
     background: none;
-
+}
+@media screen and (max-width:600px){
+    .bottomfuntion__informationbox.content{
+        width: 80%;
+        height: 2rem;
+        margin: 0px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: unset;
+        background: none;
+    }
 }
 .bottomfuntion__informationbox.content.heading{
     font-size: 1.2rem;
@@ -406,11 +494,13 @@ input:focus#emailbox__btn::placeholder{
 .bottomfuntion__informationbox.content.url{
     width: fit-content;
     transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .bottomfuntion__informationbox.content.url.arrow{
-    position: absolute;
+    position: relative;
     filter: invert();
-    right: -15%;
     width: 0.8rem;
     height: 2.2rem;
     opacity: 80%;
@@ -430,6 +520,35 @@ input:focus#emailbox__btn::placeholder{
     align-items: center;
     justify-content: center;
     color: white;
+    padding: 0 1rem;
+}
+@media screen and (max-width:600px){
+    .bottomfeature__box{
+        border-bottom: 7px solid rgba(255, 255, 255, 0.234);
+        width: 100%;
+        position: relative;
+        height: 35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: 2rem 0;
+    }
+}
+.bottomfeature__box.content.text1{
+    margin-right: 10rem;
+}
+.bottomfeature__box.content.text3{
+    margin-right: 5rem;
+}
+@media screen and (max-width:600px){
+    .bottomfeature__box.box2{
+        flex-direction: column-reverse;
+    }
+    .bottomfeature__box.box4{
+        flex-direction: column-reverse;
+    }
 }
 .bottomfeature__box.img{
     background: none;
@@ -437,6 +556,17 @@ input:focus#emailbox__btn::placeholder{
     width: auto;
     height: 20rem;
     transition: 0.5s;
+}
+@media screen and (max-width:600px){
+    .bottomfeature__box.img{
+        background: none;
+        border-bottom: unset;
+        width: auto;
+        padding: 0 !important;
+        margin: 0 !important;
+        height: 20rem;
+        transition: 0.5s;
+    }
 }
 .bottomfeature__box.img:hover{
     height: 18rem;
@@ -448,11 +578,37 @@ input:focus#emailbox__btn::placeholder{
     border-bottom: unset;
     width: fit-content;
 }
+@media screen and (max-width:600px){
+    .bottomfeature__box.content{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        border-bottom: unset;
+        width: fit-content;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: fit-content;
+        text-align: center;
+        }
+}
 .bottomfeature__box.heading{
     font-size: 3rem;
     border-bottom: unset;
     height: auto;
     justify-content: left;
+    padding: 0 0;
+}
+@media screen and (max-width:600px){
+    .bottomfeature__box.heading{
+        font-size: 2.5rem;
+        border-bottom: unset;
+        height: auto;
+        padding: 0;
+        justify-content: left;
+        margin: 0
+    }
 }
 .bottomfeature__box.para{
     font-size: 1.5rem;
@@ -460,6 +616,18 @@ input:focus#emailbox__btn::placeholder{
     border-bottom: unset;
     margin-top: 0.7rem;
     justify-content: left;
+    padding: 0 0;
+}
+@media screen and (max-width:600px){
+    .bottomfeature__box.para{
+        font-size: 1.5rem;
+        width: 100%;
+        height: auto;
+        border-bottom: unset;
+        justify-content: left;
+        padding: 0 2.5rem;
+        color: rgb(199, 199, 199);
+    }
 }
 .bottomfuntion__faq{
     position: relative;
@@ -532,6 +700,7 @@ input:focus#emailbox__btn::placeholder{
 .bottomfuntion__faq.cross{
     font-size: 4.2rem;
     font-weight: 230;
+    padding-bottom: 10px;
     width: fit-content;
     /* padding-bottom: 10px; */
     transition: all 0.3s;
@@ -581,12 +750,22 @@ input:focus#emailbox__btn::placeholder{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: transparent;
     border: 1px solid black;
     border-radius: 4px;
     padding: 0.4rem 0.7rem;
     transition: 0.5s;
+}
+.languagebtn2 select{
+    -webkit-appearance: none;
+    position: absolute;
+    font-size: 1rem;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 2.2rem;    
+    opacity: 0;
 }
 .languagebtn2:hover{
     background-color: rgb(208, 208, 208);

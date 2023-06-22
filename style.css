@@ -1027,7 +1027,7 @@ input:focus#emailbox__btn::placeholder{
     font-size: 4.2rem;
     font-weight: 230;
     width: fit-content;
-    /* padding-bottom: 10px; */
+    padding-bottom: 10px;
     transition: all 0.3s;
 }
 .bottomfuntion__bottommailbox{

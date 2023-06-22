@@ -6,13 +6,14 @@
     /* background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important; */
-    max-width: 100%;
 }
 body{
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    width: 100%;
+    height: 100%;
 }
 .landingpage{
     position: relative;
@@ -237,7 +238,7 @@ body{
 }
 @media screen and (max-width:600px){
 .openingtitle__heading{
-    font-size: 3.2rem;
+    font-size: 2.9rem;
     margin-bottom: 1rem;
 }
 }
@@ -256,7 +257,7 @@ body{
 .opening__para{
     font-size: 1.2rem;
     font-weight: 500;
-    text-shadow: 1px 0px 30px rgb(0, 0, 0);
+    /* text-shadow: 1px 0px 30px rgb(0, 0, 0); */
 }
 @media screen and (max-width:600px){
     .opening__para2{
@@ -428,10 +429,10 @@ input:focus#emailbox__btn::placeholder{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1.3rem 0.2rem;
+        padding: 1.3rem 0rem !important;
         font-size: 1.5rem;
         border-radius: 4px;
-        width: 12.5rem;
+        width: 12rem;
         background-color: rgb(35, 35, 35) ;
         color: rgb(255, 255, 255);
         font-weight: 800;
@@ -528,7 +529,6 @@ input:focus#emailbox__btn::placeholder{
 }
 @media screen and (max-width:600px){
     .bottomfuntion__informationbox{
-        /* padding: 10px 0; */
         position: relative;
         display: flex;
         flex-direction: column;
@@ -547,7 +547,6 @@ input:focus#emailbox__btn::placeholder{
 }
 @media screen and (max-width:960px){
     .bottomfuntion__informationbox{
-        /* padding: 10px 0; */
         position: relative;
         display: flex;
         flex-direction: column;
@@ -576,12 +575,12 @@ input:focus#emailbox__btn::placeholder{
     .bottomfuntion__informationbox.popcornicon{
         margin: 0px;
         position: relative;
-        width: 9.5rem;
+        width: 4rem;
         height: auto;
         background: none;
-        left: -12%;
         margin-top: -10.5rem;
         margin-bottom: 0.6rem;
+        margin-right: 17.5rem !important;
     }
 }
 @media screen and (max-width:960px){
@@ -591,9 +590,10 @@ input:focus#emailbox__btn::placeholder{
         width: 9.5rem;
         height: auto;
         background: none;
-        left: -35%;
         margin-top: -10.5rem;
         margin-bottom: 0.6rem;
+        margin-right: 25em;
+        
     }
 }
 .bottomfuntion__informationbox.content{
@@ -623,7 +623,7 @@ input:focus#emailbox__btn::placeholder{
 }
 @media screen and (max-width:960px){
     .bottomfuntion__informationbox.content{
-        width: 80%;
+        width: fit-content;
         height: 2rem;
         margin: 0px;
         position: relative;
@@ -646,7 +646,7 @@ input:focus#emailbox__btn::placeholder{
 }
 @media screen and (max-width:600px){
     .bottomfuntion__informationbox.content.heading{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         width: 100%;
     }
 }
@@ -728,10 +728,17 @@ input:focus#emailbox__btn::placeholder{
         background: none;
         border-bottom: unset;
         width: auto;
-        padding: 0 !important;
-        margin: 0 !important;
         height: 20rem;
         transition: 0.5s;
+    }
+    .bottomfeature__box.img.feature2{
+        width: 100%;
+        height: 17rem;
+        transform: scale(1.04);
+    }
+    .bottomfeature__box.img.feature4{
+        width: 100%;
+        height: auto;
     }
 }
 .bottomfeature__box.img:hover{
@@ -790,8 +797,6 @@ input:focus#emailbox__btn::placeholder{
         width: 100%;
         height: auto;
         border-bottom: unset;
-        justify-content: left;
-        padding: 0 2.5rem;
         color: rgb(199, 199, 199);
     }
 }
@@ -809,6 +814,13 @@ input:focus#emailbox__btn::placeholder{
     margin-top: 4rem;
     margin-bottom: 1.5rem;
 }
+@media screen and (max-width:600px) {
+    .bottomfuntion__faq h1{
+        font-size: 2.7rem;
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
+    }
+}
 .bottomfuntion__faq.btn{
     margin-top: 1rem;
     display: flex;
@@ -820,6 +832,80 @@ input:focus#emailbox__btn::placeholder{
     background-color: rgba(65, 65, 65, 0.428);
     padding: 0 1.5rem;
     width: 100%;
+}
+@media screen and (max-width:600px) {
+    .bottomfuntion__faq.btn{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        background-color: rgba(65, 65, 65, 0.428);
+        padding: 0 1.5rem;
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .bottomfuntion__faq.answer.show{
+        color: rgba(255, 148, 225, 0.621);
+        margin-top: 0.3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem !important;
+        text-decoration: underline;
+        font-weight: 100;
+        background-color: rgba(52, 52, 52, 0.428);
+        padding: 1.5rem 1.5rem;
+        width: 100%;
+        transition: all 0.2s;
+        max-height: 5rem;
+    }
+    .bottomfuntion__faq.btn:hover{
+        cursor: pointer;
+        background-color: rgba(91, 91, 91, 0.428);
+    }
+    .bottomfuntion__faq.answer.show{
+        color: rgba(255, 148, 225, 0.621);
+        margin-top: 0.3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem !important;
+        text-decoration: underline;
+        font-weight: 100;
+        background-color: rgba(52, 52, 52, 0.428);
+        padding: 1.5rem 1.5rem;
+        width: 100%;
+        transition: all 0.2s;
+        max-height: 5rem;
+    }
+    .bottomfuntion__faq.answer.show:hover{
+        cursor: pointer;
+        background-color: rgba(42, 42, 42, 0.397);
+        color: rgba(251, 169, 228, 0.876);
+        text-decoration: none;
+    }
+    .bottomfuntion__faq.answer{
+        color: rgba(255, 148, 225, 0.621);  
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem !important;
+        text-decoration: underline;
+        font-weight: 100;
+        padding: 0rem 1.5rem;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.2s;
+    }
 }
 .bottomfuntion__faq.btn:hover{
     cursor: pointer;

@@ -36,7 +36,48 @@ body{
         background-position-x: center;
         background-position-y: center;
         width: 100%;
-        height: 60rem;
+        height: 40rem!important;
+    }
+}
+@media screen and (max-width:1024px){
+    .landingpage{
+        position: relative;
+        background-image: url(images/feature/zerotwo.gif);
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        width: 100%;
+        height: 42rem !important;
+    }
+}
+@media screen and (max-width:600px){
+    .landingpage{
+        position: relative;
+        background-image: url(images/feature/zerotwo.gif);
+        box-shadow: 100px 100px 100px black;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        width: 100%;
+        height: 36.95rem !important;
+    }
+}
+@media screen and (max-width:960px){
+    .landingpage{
+        position: relative;
+        background-image: url(images/feature/zerotwo.gif);
+        box-shadow: 100px 100px 100px black;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        width: 100%;
+        height: 36.95rem ;
     }
 }
 /*                                              top bar                                                  */
@@ -221,9 +262,7 @@ body{
         flex-direction: column;
         align-items: baseline;
         justify-content: center;
-        margin-top: 4.2rem;
-        margin-right: 3rem;
-        margin-left: 3rem;
+        margin: 4.2rem 1rem 0 1rem!important;
         border-radius: 4px;
         text-shadow: 1px 1px 90px rgba(0, 0, 0, 0.764);
         /* background: radial-gradient(circle at left, rgb(188, 188, 188), rgba(169, 168, 166, 0.18) ); */
@@ -252,7 +291,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .openingtitle__heading{
     font-size: 3.5rem;
@@ -260,7 +299,7 @@ body{
 }
 @media screen and (max-width:600px){
 .openingtitle__heading{
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 }
@@ -271,7 +310,7 @@ body{
 }
 @media screen and (max-width:600px){
     .openingtitle__sheading{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 500;
         margin-bottom: 1.5rem;
     }
@@ -284,7 +323,7 @@ body{
 @media screen and (max-width:600px){
     .opening__para2{
         font-size: 1.2rem;
-        padding: 0 3.5rem;
+        padding: 0 1rem !important;
         font-weight: 500;
         text-shadow: none;
         /* text-shadow: 1px 0px 30px rgb(0, 0, 0); */
@@ -312,7 +351,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0 3rem;
+        margin: 0 1rem !important;
     }
 }
 @media screen and (max-width:960px){
@@ -526,7 +565,7 @@ input:focus#emailbox__btn::placeholder{
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-top: 7rem;
+        margin-top: 4rem !important;
     }
 }
 @media screen and (max-width:1280px){
@@ -560,7 +599,7 @@ input:focus#emailbox__btn::placeholder{
     justify-content: center;
     align-items: center;
     color: white;
-    background: radial-gradient(circle at center, rgba(252, 252, 252, 0.184), rgba(0, 0, 0, 0.034));
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.184), rgba(211, 211, 211, 0.034));
     border-top-right-radius: 70rem;
     border-top-left-radius: 70rem;
     border-bottom-left-radius: 50rem;
@@ -578,12 +617,12 @@ input:focus#emailbox__btn::placeholder{
         justify-content: center;
         align-items: center;
         color: white;
-        background: radial-gradient(circle at center, rgba(252, 252, 252, 0.184), rgba(0, 0, 0, 0.034));
+        background: radial-gradient(circle at top, rgba(252, 252, 252, 0.329), rgba(0, 0, 0, 0.034),);
         border-top-right-radius: 70rem;
         border-top-left-radius: 70rem;
         border-bottom-left-radius: 50rem;
         border-bottom-right-radius: 50rem;
-        border-image: linear-gradient(rgb(252, 252, 252), rgba(0, 0, 0, 0.323)) ;
+        border-image: linear-gradient(rgba(252, 252, 252, 0.45), rgba(0, 0, 0, 0.409)) ;
         width: 100%;
         height: 8.5rem;
     }
@@ -596,7 +635,7 @@ input:focus#emailbox__btn::placeholder{
         justify-content: center;
         align-items: center;
         color: white;
-        background: radial-gradient(circle at center, rgba(252, 252, 252, 0.184), rgba(0, 0, 0, 0.034));
+        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.184), rgba(0, 0, 0, 0.034));
         border-top-right-radius: 70rem;
         border-top-left-radius: 70rem;
         border-bottom-left-radius: 50rem;
@@ -910,8 +949,9 @@ input:focus#emailbox__btn::placeholder{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 77%;
+    padding: 0 1rem !important;
     color: rgb(255, 255, 255);
+    width: 100%;
 }
 .bottomfuntion__faq h1{
     font-size: 3rem;
@@ -959,11 +999,11 @@ input:focus#emailbox__btn::placeholder{
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        font-size: 1rem !important;
+        font-size: 1.3rem !important;
         text-decoration: underline;
         font-weight: 100;
         background-color: rgba(52, 52, 52, 0.428);
-        padding: 1.5rem 1.5rem;
+        padding: 1.3rem 1rem !important;
         width: 100%;
         transition: all 0.2s;
         max-height: 5rem;
@@ -971,22 +1011,6 @@ input:focus#emailbox__btn::placeholder{
     .bottomfuntion__faq.btn:hover{
         cursor: pointer;
         background-color: rgba(91, 91, 91, 0.428);
-    }
-    .bottomfuntion__faq.answer.show{
-        color: rgba(255, 148, 225, 0.621);
-        margin-top: 0.3rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 1rem !important;
-        text-decoration: underline;
-        font-weight: 100;
-        background-color: rgba(52, 52, 52, 0.428);
-        padding: 1.5rem 1.5rem;
-        width: 100%;
-        transition: all 0.2s;
-        max-height: 5rem;
     }
     .bottomfuntion__faq.answer.show:hover{
         cursor: pointer;
@@ -1001,7 +1025,7 @@ input:focus#emailbox__btn::placeholder{
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        font-size: 1rem !important;
+        font-size: 1.3rem !important;
         text-decoration: underline;
         font-weight: 100;
         padding: 0rem 1.5rem;
@@ -1057,11 +1081,11 @@ input:focus#emailbox__btn::placeholder{
     font-size: 4.2rem;
     font-weight: 230;
     width: fit-content;
-    padding-bottom: 10px;
     transition: all 0.3s;
+    padding: 0 0 10px 0!important;
 }
 .bottomfuntion__bottommailbox{
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     width: 100%;
     border-bottom: 7px solid rgba(255, 255, 255, 0.234);
 }
@@ -1073,6 +1097,18 @@ input:focus#emailbox__btn::placeholder{
     position: relative;
     width: 78%;
     transition: all 1s;
+}
+@media screen and (max-width:600px) {
+    .bottomfuntion__bottomurl{
+        color: rgb(174, 174, 174);
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: underline;
+        position: relative;
+        width: 100%;
+        padding: 0 1rem;
+        transition: all 1s;
+    }
 }
 .bottomfuntion__bottomurl.toppara{
     font-size: 1rem;
@@ -1086,6 +1122,12 @@ input:focus#emailbox__btn::placeholder{
     font-weight: 300;  
     margin-bottom: 1rem;  
 }
+@media screen and (max-width:600px) {
+    .bottomfuntion__bottomurl.para{
+        width: fit-content;
+        padding: 0 !important;
+    }
+}
 .bottomfuntion__bottomurl.para{
     width: fit-content;
 }
@@ -1094,8 +1136,9 @@ input:focus#emailbox__btn::placeholder{
     color: rgb(201, 201, 201);
 }
 .bottomfuntiom__bottomlanguagebtn{
-    width: 78%;
-    margin: 3rem 0;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem 0 4rem 0;
 
 }
 .languagebtn2{

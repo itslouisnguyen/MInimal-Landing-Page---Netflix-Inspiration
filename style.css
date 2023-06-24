@@ -648,8 +648,8 @@ input:focus#emailbox__btn::placeholder{
         width: 4rem;
         height: auto;
         background: none;
-        margin-top: -10.5rem;
-        margin-bottom: 0.6rem;
+        margin-top: -11rem !important;
+        margin-bottom: 0 !important;
         margin-right: 17.5rem !important;
     }
 }
@@ -661,7 +661,7 @@ input:focus#emailbox__btn::placeholder{
         height: auto;
         background: none;
         margin-top: -10.5rem;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.4rem;
         margin-right: 25em;
         
     }

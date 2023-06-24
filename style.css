@@ -646,12 +646,12 @@ input:focus#emailbox__btn::placeholder{
     .bottomfuntion__informationbox.popcornicon{
         margin: 0px;
         position: relative;
-        width: 4rem;
+        width: 8rem !important;
         height: auto;
         background: none;
-        margin-top: -11rem !important;
-        margin-bottom: 0 !important;
-        margin-right: 17.5rem !important;
+        margin-top: -10rem !important;
+        margin-bottom: rem !important;
+        margin-right: 18rem !important;
     }
 }
 @media screen and (max-width:960px){
@@ -1001,7 +1001,8 @@ input:focus#emailbox__btn::placeholder{
         font-size: 1.3rem;
         font-weight: 600;
         background-color: rgba(65, 65, 65, 0.428);
-        padding: 0 1.5rem;
+        padding: 0 1rem !important;
+        height: 4.5rem ;
         width: 100%;
     }
 }
@@ -1020,7 +1021,7 @@ input:focus#emailbox__btn::placeholder{
         padding: 1.3rem 1rem !important;
         width: 100%;
         transition: all 0.2s;
-        max-height: 5rem;
+        max-height: 4.5rem;
     }
     .bottomfuntion__faq.btn:hover{
         cursor: pointer;
